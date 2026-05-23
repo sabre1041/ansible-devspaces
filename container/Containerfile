@@ -1,0 +1,10 @@
+FROM ghcr.io/ansible/ansible-devspaces:latest
+
+USER 0
+
+COPY --chmod=0755 entrypoint_wrapper.sh /entrypoint_wrapper.sh
+
+USER 1000
+
+ENTRYPOINT ["/entrypoint_wrapper.sh"]
+CMD ["tail", "-f", "/dev/null"]

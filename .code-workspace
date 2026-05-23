@@ -25,7 +25,8 @@
 			"redhat.ansible",
 			"redhat.vscode-yaml",
 			"redhat.vscode-openshift-connector",
-			"ms-python.python"
+			"ms-python.python",
+			"sst-dev.opencode"
 		]
 	}
 }
